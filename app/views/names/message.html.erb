@@ -1,0 +1,11 @@
+<form action="/show_message" method="post">
+	<label for ="message">Message</label>
+	<input type ="text" name="message">
+	<button >Enter</button>
+</form>
+
+<%= form_tag'/show_message',method: :post do %>
+ <%= label_tag(:message) %>
+  <%= text_field_tag(:message) %>
+  <%= submit_tag("Just do it!") %>
+<% end %>

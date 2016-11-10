@@ -28,4 +28,12 @@ def choice
 	end
 	render 'choice.html.erb'
 end
+
+def message
+	render 'message.html.erb'
+end
+def show_message
+	@message=params['message']
+	render 'show_message.html.erb'
+end
 end
